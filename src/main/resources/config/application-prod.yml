@@ -1,0 +1,27 @@
+# ---------------------------------
+# --- APP General Configuration ---
+# ---------------------------------
+springdoc:
+  server:
+    address: localhost
+    port: 8082
+server:
+  port: 8082
+
+# --------------------------------
+# --- Database (secret-cnx-db) ---
+# --------------------------------
+spring:
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://162.241.60.20:3306/softcomp_solomon_ocbp?useSSL=true
+    username: softcomp_solomon_user_ocbp
+    password: T3cn0l0g1A1!
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
+      maxLifetime: 600000
